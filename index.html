@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Online Shopping</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <style>
+  body{
+    background: linear-gradient(to bottom right, black,red,orange,yellow);
+    }
+    h2 {
+      background-image:radial-gradient(indigo,blue,aqua,white);
+      color: black;
+      font-family: cursive;
+      text-align: center;
+    }
+    h3 {
+      color: blue;
+      font-family: cursive;
+      text-align: center;
+    }
+    nav {
+      background-color: purple;
+      box-shadow: 10px 10px 10px 0 black;
+      border-radius: 8px;
+      padding: 10px 20px;
+      margin-bottom: 20px;
+    }
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      padding: 0;
+    }
+    nav li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background 0.3s, transform 0.3s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    nav li a:hover {
+      background-color: aqua;
+      transform: scale(1.05);
+    }
+    section {
+      padding: 20px;
+    }
+    .category-section {
+      margin-bottom: 40px;
+    }
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .product-card {
+      border: 3px solid aqua;
+      border-radius: 10px;
+      padding: 15px;
+      width: 160px;
+      box-shadow: 15px 8px 4px 5px black;
+      background-image:linear-gradient(white,grey,black);
+      color: white;
+      text-align: center;
+    }
+    .product-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .product-card del {
+      color: #ddd;
+    }
+    footer{
+      background-color: red;
+      text-align:center;
+   
+    }
+    
+      
+  </style>
+</head>
+<body>
+  <h3>Welcome to</h3>
+  <h2>Ram Narayan Store</h2>
+  <img src="logo.jpg" alt="my logo">
+  <input type="text" placeholder="Search for products."/><br>
+
+  <nav>
+    <ul>
+      <li><a href="#Gadget"><i class="fas fa-rocket" style="color:green;"></i>Gadget</a></li>
+      <li><a href="#Beauty"><i class="fas fa-hand-sparkles" title="Nail Polish" style="color:magenta;"></i>Beauty</a></li>
+      <li><a href="#Mobile"><i class="fas fa-mobile" style="color:yellow;"></i>Mobile</a></li>
+      <li><a href="#Clothes"><i class="fas fa-tshirt" style="color:white;"></i>Clothes</a></li>
+      <li><a href="#Shoes"><i class="fa-solid fa-shoe-prints" style="color:orange;"></i>Shoes</a></li>
+    </ul>
+  </nav>
+
+  <!-- Gadget Section -->
+  <section id="Gadget" class="category-section">
+    <h2>Gadgets</h2>
+    <div class="product-container">
+      <div class="product-card">
+        <img src= alt="Smartwatch">
+        <h4>Fashion</h4>
+        <p><i><b><h4>Smartwatch Pro</h4></b></i><br>
+Perfect for fitness tracking<br>
+25% off !!! <del>₹8000</del><br>
+Now only in ₹6000<br>
+--- offer for 2 days only
+</p>
+        <script>
+   function heFun()  {
+        document.getElementById(
+           "smart").innerHTML =  "For: Mens, Childs, ladies<br> Color: Orange, Blue, Black<br> Dilivery Time: upto 10 days";
+    
+     
+         }
+ </script>   
+      <button onclick="heFun()"> Buy</button>
+        <p id="smart"></p>
+      </div>
+      <div class="product-card">
+        <img src=alt="Bluetooth Speaker">
+        <h4>Bluetooth</h4>
+        
+        <p><i><b>Bluetooth Speaker Boom</b></i><br>
+Best for outdoor parties<br>
+20% off !!! <del>₹5000</del><br>
+Now only in ₹4000<br>
+--- offer for 2 days only
+</p>
+        <script>
+   function sheFun()  {
+        document.getElementById(
+           "blue").innerHTML =  "Size: 10cm×5 <br> Color: Red, Navy Blue, orange<br> Dilivery Time:1 to 4 days";
+    
+     
+         }
+ </script>   
+      <button onclick="sheFun()"> Buy</button>
+        <p id="blue"></p>
+      </div>
+      <div class="product-card">
+        <img src= alt="Earbuds">
+        <h4>Earbuds</h4>
+        <p><i><b>Wireless Earbuds X</b></i><br>
+Noise cancellation enabled<br>
+30% off !!! <del>₹4000</del><br>
+Now only in ₹2800<br>
+--- offer for 2 days only
+</p>
+   
+        <script>
+   function itFun()  {
+        document.getElementById(
+           "ear").innerHTML =  "Capacity: 5 hours<br> Color: Red, Blue, Maroon<br> Dilivery Time: upto 1 week ";
+    
+     
+         }
+ </script>   
+      <button onclick="itFun()"> Buy</button>
+        <p id="ear"></p>
+      </div>
+      <div class="product-card">
+        <img src= alt="VR Headset">
+        <h4>VR Headset</h4>
+        <p><i><b>VR Headset Vision</b></i><br>
+Immersive gaming experience<br>
+40% off !!! <del>₹7000</del><br>
+Now only in ₹4200<br>
+--- offer for 2 days only
+</p>
+       
+        <script>
+   function thoseFun()  {
+        document.getElementById(
+           "vr").innerHTML =  "Size: For Mens only<br> Color: white, Black <br> Dilivery Time: 5 days";
+    
+     
+         }
+ </script>   
+      <button onclick="thoseFun()"> Buy</button>
+        <p id="vr"></p>
+      </div>
+      <div class="product-card">
+        <img src= alt="Fitness Band">
+        <h4>Fitness Band</h4>
+        <p><i><b>Fitness Band Lite</b></i><br>
+Track steps and heart rate<br>
+35% off !!! <del>₹3000</del><br>
+Now only in ₹1950<br>
+--- offer for 2 days only
+</p>
+      <script>
+   function areFun()  {
+        document.getElementById(
+           "band").innerHTML =  "Size: Mens, Childs, womens<br> Color: White, Blue, Black<br> Dilivery Time: upto 2 week ";
+    
+     
+         }
+ </script>   
+      <button onclick="areFun()"> Buy</button>
+        <p id="band"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Beauty Section -->
+  <section id="Beauty" class="category-section">
+    <h2>Beauty Products</h2>
+    <div class="product-container">
+      <div class="product-card">
+        <img src= alt="Nail Polish">
+        <h4>Nail Polish</h4>
+        <p><i><b>Shiny Nail Polish Set</b></i><br>
+Glossy finish, quick dry<br>
+20% off !!! <del>₹500</del><br>
+Now only in ₹400<br>
+--- offer for 2 days only
+</p>
+        <script>
+   function aFun()  {
+        document.getElementById(
+           "nail").innerHTML =  "Quality: 8 to 10 days<br> Color: Green, White, Red, Pink<br> Dilivery Time: upto 4 days ";
+    
+     
+         }
+ </script>   
+      <button onclick="aFun()"> Buy</button>
+        <p id="nail"></p>
+      </div>
+      <div class="product-card">
+        <img src= alt="Lipstick">
+        <h4>Lipstick</h4>
+        <p><i><b>Matte Lipstick Duo</b></i><br>
+Bold colors, long-lasting wear<br>
+25% off !!! <del>₹1000</del><br>
+Now only in ₹750<br>
+--- offer for 2 days only
+</p>
+        
+        <script>
+   function bFun()  {
+        document.getElementById(
+           "lips").innerHTML =  "Flaviour: Chocolate, simple<br> Color: Red, Maroon, Pink<br> Dilivery Time: 8 to 10 days ";
+    
+     
+         }
+ </script>   
+      <button onclick="bFun()"> Buy</button>
+        <p id="lips"></p>
+      </div>
+      <div class="product-card">
+        <img src= alt="Compact Powder">
+        <h4>Compact Powder</h4>
+        <p><i><b>Compact Powder Glow</b></i><br>
+Smooth texture, perfect finish<br>
+30% off !!! <del>₹800</del><br>
+Now only in ₹560<br>
+--- offer for 2 days only
+</p>
+        
+        <script>
+   function cFun()  {
+        document.getElementById(
+           "powder").innerHTML =  "Quality: Antibacterial, Flavour<br> Brand: Foog, Z, White ton <br> Dilivery Time: upto 1 week ";
+    
+     
+         }
+ </script>   
+      <button onclick="cFun()"> Buy</button>
+        <p id="powder"></p>
+      </div>
+      <div class="product-card">
+        <img src= alt="Eyeliner">
+        <h4>Eyeliner</h4>
+        <p><i><b>Waterproof Eyeliner</b></i><br>
+Smudge-proof, intense black<br>
+15% off !!! <del>₹600</del><br>
+Now only in ₹510<br>
+--- offer for 2 days only
+</p>
+
+        <script>
+   function dFun()  {
+        document.getElementById(
+           "eye").innerHTML =  "Size: S, M, L<br> Color: Black, Golden, Maroon<br> Dilivery Time: upto 1 week ";
+    
+     
+         }
+ </script>   
+      <button onclick="dFun()"> Buy</button>
+        <p id="eye"></p>
+      </div>
+      <div class="product-card">
+        <img src= alt="Face Cream">
+        <h4>Face Cream</h4>
+        <p><i><b>Daily Face Cream</b></i><br>
+Hydrating and non-greasy<br>
+20% off !!! <del>₹900</del><br>
+Now only in ₹720<br>
+--- offer for 2 days only
+</p>
+        <script>
+   function eFun()  {
+        document.getElementById(
+           "face").innerHTML =  "Time : 1 day <br> Color: peach, White, Pink<br> Dilivery Time: upto 2 week ";
+    
+     
+         }
+ </script>   
+      <button onclick="eFun()"> Buy</button>
+        <p id="face"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mobile Section -->
+  <section id="Mobile" class="category-section">
+    <h2>Mobiles</h2>
+    <div class="product-container">
+      <div class="product-card">
+        <img src=alt="iPhone 16">
+        <h4>iPhone 16 pro</h4>
+        <p><i><b>iPhone 16 Pro</b></i><br>
+Latest Apple innovation<br>
+10% off !!! <del>₹145000</del><br>
+Now only in ₹130500<br>
+--- offer for 2 days only
+</p>
+        <script>
+   function fFun()  {
+        document.getElementById(
+           "i").innerHTML =  "Storage: 128GB, 5G<br> Capacity: 12 hour<br> Dilivery Time: upto 1 week ";
+    
+     
+         }
+ </script>   
+      <button onclick="fFun()"> Buy</button>
+        <p id="i"></p>
+      </div>
+      <div class="product-card">
+        <img src= alt="Samsung Galaxy">
+        <h4>Samsung Galaxy S25 </h4>
+        <p><i><b>Samsung Galaxy S25</b></i><br>
+Next-gen display & camera<br>
+12% off !!! <del>₹110000</del><br>
+Now only in ₹96800<br>
+--- offer for 2 days only
+</p>
+        
+        <script>
+   function gFun()  {
+        document.getElementById(
+           "samsung").innerHTML =  "Storage: 256 Gb 5g<br> Capacity: 15 hour <br> Dilivery Time: upto 1 week ";
+    
+     
+         }
+ </script>   
+      <button onclick="gFun()"> Buy</button>
+        <p id="samsung"></p>
+      </div>
+      <div class="product-card">
+        <img src= alt="OnePlus Nord">
+        <h4>OnePlus Nord</h4>
+        <p><i><b>OnePlus Nord 3</b></i><br>
+Performance meets style<br>
+20% off !!! <del>₹30000</del><br>
+Now only in ₹24000<br>
+--- offer for 2 days only
+</p>
+        
+        <script>
+   function hFun()  {
+        document.getElementById(
+           "one").innerHTML =  "Storage: 128GB, 4G<br> Capacity: 10 hour<br> Dilivery Time: upto 10 day ";
+    
+     
+         }
+ </script>   
+      <button onclick="hFun()"> Buy</button>
+        <p id="one"></p>
+      </div>
+      <div class="product-card">
+        <img src= alt="Realme 11">
+        <h4>Realme 11</h4>
+        <p><i><b>Realme 11</b></i><br>
+Smooth design, 108MP camera<br>
+18% off !!! <del>₹18000</del><br>
+Now only in ₹14760<br>
+--- offer for 2 days only
+</p>
+       
+        <script>
+   function zFun()  {
+        document.getElementById(
+           "realme").innerHTML =  "Storage: 64GB, 4G<br> Capacity: 8 hour<br> Dilivery Time: upto 10 day ";
+    
+     
+         }
+ </script>   
+      <button onclick="zFun()"> Buy</button>
+        <p id="realme"></p>
+      </div>
+      <div class="product-card">
+        <img src= alt="Redmi Note 12">
+        <h4>Redmi 13C</h4>
+        <p><i><b>Realme 13C</b></i><br>
+Smooth design, 108MP camera<br>
+18% off !!! <del>₹18000</del><br>
+Now only in ₹14760<br>
+--- offer for 2 days only
+</p>
+        
+        <script>
+   function jFun()  {
+        document.getElementById(
+           "redmi").innerHTML =  "Storage: 128GB, 5G<br> Capacity: 12 hour<br> Dilivery Time: upto 1o day ";
+    
+     
+         }
+ </script>   
+      <button onclick="jFun()"> Buy</button>
+        <p id="redmi"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clothes Section -->
+  <section id="Clothes" class="category-section">
+    <h2>Clothes</h2>
+    <div class="product-container">
+      <div class="product-card">
+        <img src= alt="T-shirt">
+        <h4>T-shirt</h4>
+        <p><i><b>Cotton T-Shirt</b></i><br>
+Soft and breathable everyday wear<br>
+20% off !!! <del>₹800</del><br>
+Now only in ₹640<br>
+--- offer for 2 days only
+</p>
+       
+        <script>
+   function kFun()  {
+        document.getElementById(
+           "t").innerHTML =  "Size: S, M, L <br> Color: Red, Blue, Black<br> Dilivery Time: 1 to 10 days <br>Antibacterial";
+    
+     
+         }
+ </script>   
+      <button onclick="kFun()"> Buy</button>
+        <p id="t"></p>
+      </div>
+      <div class="product-card">
+        <img src= alt="Jeans">
+        <h4>Jeans</h4>
+        <p><i><b>Denim Jeans</b></i><br>
+Classic fit with a modern touch<br>
+25% off !!! <del>₹2000</del><br>
+Now only in ₹1500<br>
+--- offer for 2 days only
+</p>
+        
+        <script>
+   function lFun()  {
+        document.getElementById(
+           "jeans").innerHTML =  "Size: S, M, L <br> Color: White, Blue, Black<br> Dilivery Time: 1 to 10 days <br>Antibacterial";
+    
+     
+         }
+ </script>   
+      <button onclick="lFun()"> Buy</button>
+        <p id="jeans"></p>
+      </div>
+      <div class="product-card">
+        <img src= alt="Kurti">
+        <h4>Kurti</h4>
+        <p><i><b>Designer Kurti</b></i><br>
+Elegant ethnic style<br>
+30% off !!! <del>₹1500</del><br>
+Now only in ₹1050<br>
+--- offer for 2 days only
+</p>
+        
+        <script>
+   function mFun()  {
+        document.getElementById(
+           "kur").innerHTML =  "Size: S, M, L <br> Color: Red, Pink, Black<br> Dilivery Time: 1 to 10 days <br>Antibacterial";
+     
+         }
+ </script>   
+      <button onclick="mFun()"> Buy</button>
+        <p id="kur"></p>
+      </div>
+      <div class="product-card">
+        <img src= alt="Shirt">
+        <h4>Shirt</h4>
+        <p><i><b>Formal Shirt</b></i><br>
+Ideal for office and meetings<br>
+15% off !!! <del>₹1200</del><br>
+Now only in ₹1020<br>
+--- offer for 2 days only
+</p>
+        
+        <script>
+   function nFun()  {
+        document.getElementById(
+           "shirt").innerHTML =  "Size: S, M, L <br> Color: White, Green, Black<br> Dilivery Time: 1 to 10 days <br>Antibacterial";
+    
+     
+         }
+ </script>   
+      <button onclick="nFun()"> Buy</button>
+        <p id="shirt"></p>
+      </div>
+      <div class="product-card">
+        <img src=alt="Saree">
+        <h4>Saree</h4>
+        <p><i><b>Silk Saree</b></i><br>
+Perfect for festive occasions<br>
+35% off !!! <del>₹5000</del><br>
+Now only in ₹3250<br>
+--- offer for 2 days only
+</p>
+        <script>
+   function oFun()  {
+        document.getElementById(
+           "saree").innerHTML =  "Qyality: Banarasi, Surat, cotton <br> Color: Red, Green, Maroon<br> Dilivery Time: upto 1 week ";
+    
+     
+         }
+ </script>   
+      <button onclick="oFun()"> Buy</button>
+        <p id="saree"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shoes Section -->
+  <section id="Shoes" class="category-section">
+    <h2>Shoes</h2>
+    <div class="product-container">
+      <div class="product-card">
+        <img src= alt="Sports Shoes">
+   <h4>Sport shoes</h4><br>
+  <p> <i> <b>Nike Shoes</b></i><br>
+      Suitable for running<br>
+     30%off !!!  <del>₹2000 </del><br>
+    Now only in  ₹1500<br>
+   --- offer for 3 days only
+    </p>
+    
+<script>
+   function myFun()  {
+        document.getElementById(
+           "Nike").innerHTML =  "Size: 4, 5, 6, 7, 8, <br> Color: Red, Blue, Black<br> Dilivery Time: 3 to 8 days";
+    
+     
+         }
+ </script>   
+ 
+      <button onclick="myFun()"> Buy</button>
+      <p id="Nike"></p>
+      </div>
+      <div class="product-card">
+        <img src= alt="Casual Shoes">
+        <h4>Casual Shoes</h4>
+        <p><i><b>Casual Shoes</b></i><br>
+Comfortable and stylish for daily use<br>
+20% off !!! <del>₹1500</del><br>
+Now only in ₹1200<br>
+--- offer for 2 days only
+</p>
+
+        <script>
+   function iFun()  {
+        document.getElementById(
+           "casual").innerHTML =  "Size: 3, 4, 5, 6, 7 <br> Color: Black, Brown, White<br> Dilivery Time: 2 to5 days";
+    
+     
+         }
+ </script>   
+      <button onclick="iFun()"> Buy</button>
+        <p id="casual"></p>
+      </div>
+      <div class="product-card">
+        <img src= alt="Formal Shoes">
+        <h4>Formal Shoes</h4>
+        <p><i><b>Bata Formal Shoes</b></i><br>
+Best for office and events<br>
+25% off !!! <del>₹5000</del><br>
+Now only in ₹3750<br>
+--- offer for 2 days only
+</p>
+      </p>
+    <script>
+       function ourFun()  {
+        document.getElementById(
+           "formal").innerHTML =  "Size: 5, 6, 7, 8, 9<br> Color: Maroon, Brown, Black<br> Dilivery Time: 1 week";
+    
+     
+         }
+ </script>   
+      <button onclick="ourFun()"> Buy</button>
+      
+          <p id="formal"></p>
+      </div>
+      <div class="product-card">
+        <img src= alt="Sandals">
+        <h4>Sandals</h4>
+        <p><i><b>Leather Sandals</b></i><br>
+Comfortable wear for summer<br>
+15% off !!! <del>₹1200</del><br>
+Now only in ₹1020<br>
+--- offer for 2 days only
+</p>
+        
+        <script>
+   function weFun()  {
+        document.getElementById(
+           "sandal").innerHTML =  "Size: 1, 2, 3, 4, 5, <br> Color: Red, Green, Aqua<br> Dilivery Time: 10 to 12days";
+    
+     
+         }
+ </script>   
+      <button onclick="weFun()"> Buy</button>
+        <p id="sandal"></p>
+      </div>
+      
+      <div class="product-card">
+        <img src= alt="Sneakers">
+        <h4>Sneakers</h4>
+        <p><i><b>Trendy Sneakers</b></i><br>
+Perfect for urban streetwear<br>
+30% off !!! <del>₹3000</del><br>
+Now only in ₹2100<br>
+--- offer for 2 days only
+</p>
+        
+        
+<script>
+   function yourFun()  {
+        document.getElementById(
+           "sneaker").innerHTML =  "Size: 4, 5, 6, 7, 8 <br> Color: Red, Blue, Maroon<br> Dilivery Time: upto 1 week ";
+    
+     
+         }
+ </script>   
+      <button onclick="yourFun()"> Buy</button>
+        <p id="sneaker"></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+  <a href="login.html">Login</a><br>
+  <a href="sign in">Sign in</a>
+  </footer>
+  </body>
+  </html>
