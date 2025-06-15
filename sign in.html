@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign-In Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eaf2f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+
+    .signin-container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      width: 340px;
+    }
+
+    .signin-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .signin-container label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .signin-container input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .signin-container button {
+      width: 100%;
+      padding: 10px;
+      background-color: green;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .signin-container button:hover {
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="signin-container">
+    <h2>Sign-In</h2>
+    <form id="signInForm" onsubmit="return validateSignIn()">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Enter full name">
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="Enter email">
+
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Choose username">
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter password">
+
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter password">
+
+      <label for="contact">Contact Number:</label>
+      <input type="text" id="contact" name="contact" placeholder="Enter contact number">
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    function validateSignIn() {
+      var fullName = document.getElementById("fullname").value.trim();
+      var email = document.getElementById("email").value.trim();
+      var username = document.getElementById("username").value.trim();
+      var password = document.getElementById("password").value.trim();
+      var confirmPassword = document.getElementById("confirmPassword").value.trim();
+      var contact = document.getElementById("contact").value.trim();
+
+      if (!fullName || !email || !username || !password || !confirmPassword || !contact) {
+        alert("Please fill out all the fields.");
+        return false;
+      }
+
+      if (password !== confirmPassword) {
+        alert("Passwords do not match.");
+        return false;
+      }
+
+      var emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address.");
+        return false;
+      }
+
+      var contactPattern = /^\d{10}$/;
+      if (!contactPattern.test(contact)) {
+        alert("Please enter a valid 10-digit contact number.");
+        return false;
+      }
+
+      alert("Sign-in successful!");
+      return true;
+    }
+  </script>
+
+</body>
+</html>
